@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HeaderPage from "./HeaderPage";
-import About from "./About";
+import About from ".about/About";
 import Skills from "./skills/Skills";
 import Navigation from "./templates/Navigation";
 
