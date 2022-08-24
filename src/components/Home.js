@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import HeaderPage from "./HeaderPage";
-import About from ".about/About";
+import About from "./about/About";
 import Skills from "./skills/Skills";
 import Navigation from "./templates/Navigation";
 
@@ -12,7 +12,7 @@ function Home() {
       let windowHeight = window.scrollY;
       windowHeight > 50
         ? setStickyClass("sticky-top top-0 left-0 z-30")
-        : setStickyClass("stickt-top top-0 left-0 z-30");
+        : setStickyClass("sticky-top top-0 left-0 z-30");
     }
   };
 

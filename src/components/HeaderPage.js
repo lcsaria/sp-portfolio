@@ -4,34 +4,34 @@ import "../styles/about.css";
 
 function HeaderPage() {
   return (
-    <div className="p-5 bg-blue-300 min-h-screen">
-      <div className="relative overflow-hidden">
-        <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-7 lg:px-8 sm:static">
-            <div className="sm:max-w-lg">
-              <h1 className="text-4xl font font-bold tracking-tight text-gray-900 sm:tracking-tight sm:text-6xl">
-                Hey, I'm Lmarl
-              </h1>
-              <p className="mt-4 text-4xl xl:text-2xl text-gray-500">
-                <TypeAnimation
-                  sequence={[
-                    "Programmer",
-                    5000,
-                    "Musician",
-                    5000,
-                    "Table Tennis Player",
-                    5000,
-                  ]}
-                  wrapper="p"
-                  cursor={true}
-                  repeat={Infinity}
-                />
-              </p>
-              <button className="flex items-center mt-5 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                Contact Us
-              </button>
-            </div>
-          </div>
+    <div
+      class="min-h-screen"
+      style={{ background: "linear-gradient(90deg, #667eea 0%, #764ba2 100%)" }}
+    >
+      <div className="mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
+        <div class="container px-5 p-5 lg:mt-64 md:mt-32 xs:text-center">
+          <h1 class="text-6xl font-bold mb-2 text-emerald-200">
+            Hey, I'm Lmarl
+          </h1>
+          <h3 class="text-2xl mb-8 text-black-300">
+            <TypeAnimation
+              sequence={[
+                "Programmer",
+                5000,
+                "Musician",
+                5000,
+                "Table Tennis Player",
+                5000,
+              ]}
+              wrapper="p"
+              cursor={true}
+              repeat={Infinity}
+            />
+          </h3>
+
+          <button class="bg-white font-bold rounded-full py-2 px-8 shadow-lg uppercase tracking-wider">
+            Contact Us
+          </button>
         </div>
       </div>
     </div>
