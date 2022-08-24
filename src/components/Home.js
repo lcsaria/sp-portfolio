@@ -12,7 +12,7 @@ function Home() {
       let windowHeight = window.scrollY;
       windowHeight > 50
         ? setStickyClass("sticky-top top-0 left-0 z-30")
-        : setStickyClass("stickt-top top-0 left-0 z-30");
+        : setStickyClass("sticky-top top-0 left-0 z-30");
     }
   };
 
