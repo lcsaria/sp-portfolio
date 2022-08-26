@@ -3,6 +3,16 @@ body {
   font-family: "Oswald";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --midnightblue-50: #ebf1ff;
+  --midnightblue-100: #dbe5ff;
+  --midnightblue-200: #beceff;
+  --midnightblue-300: #96aeff;
+  --midnightblue-400: #6d81ff;
+  --midnightblue-500: #4b56ff;
+  --midnightblue-600: #2f2bff;
+  --midnightblue-700: #271fe3;
+  --midnightblue-800: #201db6;
+  --midnightblue-900: #191970;
 }
 
 code {

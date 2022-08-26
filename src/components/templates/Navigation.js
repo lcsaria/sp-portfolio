@@ -4,7 +4,7 @@ function Navigation() {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="w-full bg-zinc-400 shadow">
+    <nav className="w-full bg-[#6d81ff] shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
