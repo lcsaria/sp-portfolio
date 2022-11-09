@@ -24,34 +24,34 @@ function Navbar() {
           </label>
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 uppercase bg-base-100"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52 uppercase bg-primary"
           >
             <li>
-              <a>about</a>
+              <a href="#about">about</a>
             </li>
             <li>
-              <a>projects</a>
+              <a href="#projects">projects</a>
             </li>
             <li>
-              <a>contact</a>
+              <a href="#contact">contact</a>
             </li>
             <li>
               <DarkLight />
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+        <a className="btn btn-ghost normal-case text-xl">Lmarl Saria</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 uppercase">
           <li>
-            <a>about</a>
+            <a href="#about">about</a>
           </li>
           <li>
-            <a>projects</a>
+            <a href="#projects">projects</a>
           </li>
           <li>
-            <a>contact</a>
+            <a href="#contact">contact</a>
           </li>
           <li>
             <DarkLight />
