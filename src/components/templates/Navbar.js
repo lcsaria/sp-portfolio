@@ -35,12 +35,14 @@ function Navbar() {
             <li>
               <a href="#contact">contact</a>
             </li>
-            <li>
-              <DarkLight />
-            </li>
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-xl">Lmarl Saria</a>
+        <div className="navbar-center">
+          <a className="btn btn-ghost normal-case text-xl ">Lmarl Saria</a>
+        </div>
+        <div className="navbar-end">
+          <DarkLight />
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0 uppercase">
@@ -52,9 +54,6 @@ function Navbar() {
           </li>
           <li>
             <a href="#contact">contact</a>
-          </li>
-          <li>
-            <DarkLight />
           </li>
         </ul>
       </div>
