@@ -37,7 +37,12 @@ function Home() {
         </div>
       </div>
       <div className="min-h-screen" id="#about">
-        <span className="text-primary">Lmarl</span>
+        <div className="container p-5 mt-96">
+          <span className="text-5xl text-primary">EDUCATION</span>
+          <div className="grid-cols-2 lg:grid">
+            <div className="w-full"></div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ function DarkLight() {
 
         <svg
           data-set-theme="night"
-          class="swap-on fill-current w-10 h-10"
+          className="swap-on fill-current w-10 h-10"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
@@ -21,7 +21,7 @@ function DarkLight() {
 
         <svg
           data-set-theme="corporate"
-          class="swap-off fill-current w-10 h-10"
+          className="swap-off fill-current w-10 h-10"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
         >
