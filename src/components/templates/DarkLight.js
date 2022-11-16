@@ -7,7 +7,7 @@ function DarkLight() {
 
   return (
     <>
-      <label className="swap swap-rotate swap-on ">
+      <label className="swap swap-rotate swap-on border-1 rounded-sm">
         <input type="checkbox" />
 
         <svg
