@@ -13,17 +13,21 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20"></p>
+        <p className="text-xl mt-20">
+          I'm Lmarl, 25, M, software enginner from General Trias, Cavite.
+          Studied at Cavite State University, graduated with a degree of
+          Bachelor of Science in Information Technology. I'm passionate to to
+          begin my career in a high-level professional environment.
+        </p>
 
         <br />
 
         <p className="text-xl">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          pariatur, vel similique sint, nobis aspernatur ut praesentium
-          explicabo ipsam aliquid quasi laboriosam et culpa possimus repudiandae
-          quisquam ullam maiores ab unde. Fugiat odio mollitia nemo alias.
-          Commodi facilis atque nulla vero voluptatem explicabo. Quibusdam,
-          magni quo! Eum cupiditate debitis labore.
+          In the span of 6 years in exposure, from college to work, I learned
+          C++, Java, SQL, PHP, C# (Unity) during college and I'm interested in
+          front-end development with HTML, CSS, JavaScript, ReactJS,
+          TailwindCSS, Bootstrap. At this moment, I studied SpringBoot, and
+          other framework in order to be full-stack software Engineer
         </p>
       </div>
     </div>

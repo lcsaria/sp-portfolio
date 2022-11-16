@@ -4,14 +4,16 @@ import Navbar from "./templates/Navbar";
 import DarkLight from "./templates/DarkLight";
 import Landing from "./Landing";
 import Portfolio from "./Portfolio";
+import Experience from "./Experience";
 
 function Home() {
   return (
-    <div className="bg-base-100">
+    <div className="bg-base-100 w-full">
       <Navbar />
       <Landing />
       <About />
       <Portfolio />
+      <Experience />
     </div>
   );
 }
