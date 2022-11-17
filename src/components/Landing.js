@@ -21,7 +21,7 @@ function Landing() {
       name="home"
       className="hero w-full h-screen  bg-gradient-to-b from-gray-800 to-black text-white p-4"
     >
-      <div className="">
+      <div className="container">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={HeroImage}
@@ -30,11 +30,14 @@ function Landing() {
                 ? "hidden rounded-lg shadow-2xl"
                 : "hidden lg:block rounded-lg shadow-2xl"
             }
+            width="50%"
             alt="images"
           />
           <div>
-            <h1 className="text-5xl font-bold text-primary">It's me, Lmarl</h1>
-            <p className="text-xl py-6 text-secondary text-justify">
+            <h1 className="text-3xl sm:text-5xl font-bold text-primary">
+              It's me, Lmarl
+            </h1>
+            <p className="text-base sm:text-xl py-6 text-secondary text-justify">
               Software Engineer with 2+ years of experience focused on front-end
               development. Currently, Jr. Java Developer who passionate in
               debugging and helping others especially in programming.
