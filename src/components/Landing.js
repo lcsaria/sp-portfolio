@@ -1,18 +1,35 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import HeroImage from "../assets/HeroImage.png";
 import { Link } from "react-scroll";
 
 function Landing() {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  });
+
   return (
     <div
       name="home"
-      className="hero w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white p-3"
+      className="hero w-full h-screen  bg-gradient-to-b from-gray-800 to-black text-white p-4"
     >
       <div className="">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={HeroImage}
-            className="hidden lg:block rounded-lg shadow-2xl"
+            className={
+              width < 1300
+                ? "hidden rounded-lg shadow-2xl"
+                : "hidden lg:block rounded-lg shadow-2xl"
+            }
             alt="images"
           />
           <div>

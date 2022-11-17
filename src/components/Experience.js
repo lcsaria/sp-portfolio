@@ -73,7 +73,7 @@ const Experience = () => {
               className={`flex shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
               <img src={icon} alt="" className="w-10 mx-4" />
-              <p className="mt-2 font-semibold">{title}</p>
+              <p className="mt-2 font-semibold text-gray-500">{title}</p>
             </div>
           ))}
         </div>

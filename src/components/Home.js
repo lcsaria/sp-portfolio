@@ -8,7 +8,7 @@ import Experience from "./Experience";
 
 function Home() {
   return (
-    <div className="bg-base-100 w-full">
+    <div className="bg-base-100">
       <Navbar />
       <Landing />
       <About />

@@ -4,9 +4,14 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
   const updateDimensions = () => {
     setWidth(window.innerWidth);
+    setHeight(window.innerHeight);
     if (width < 1024) {
+      setOpen(false);
+    }
+    if (height < 50) {
       setOpen(false);
     }
   };
@@ -37,10 +42,16 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("resize", updateDimensions);
     return () => window.removeEventListener("resize", updateDimensions);
-  }, [width]);
+  });
 
   return (
-    <div className="min-h-full w-full h-15 bg-gray-700 sticky top-0 z-50">
+    <div
+      className={
+        width > 1024
+          ? "min-h-full w-full h-15 bg-gray-700 sticky top-0 z-50"
+          : "w-full h-fit bg-gray-700 fixed"
+      }
+    >
       <nav className="">
         <div className="mx-auto max-w-7xl px-4 sm:px-10 lg:px-8">
           <div className="flex h-16 items-center justify-between">
@@ -63,7 +74,7 @@ const Navbar = () => {
                           key={id}
                           className="px-4 cursor-pointer capitalize font-medium text-gray-200 hover:scale-105 duration-200"
                         >
-                          <Link to={link} smooth duration={500}>
+                          <Link to={link} spy={true} smooth duration={500}>
                             {link}
                           </Link>
                         </li>
@@ -101,6 +112,7 @@ const Navbar = () => {
                     <Link
                       onClick={() => setOpen(!isOpen)}
                       to={link}
+                      spy={true}
                       smooth
                       duration={500}
                     >
