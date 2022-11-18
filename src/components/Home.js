@@ -5,6 +5,8 @@ import DarkLight from "./templates/DarkLight";
 import Landing from "./Landing";
 import Portfolio from "./Portfolio";
 import Experience from "./Experience";
+import SocialLinks from "./SocialLinks";
+import Contact from "./Contact";
 
 function Home() {
   return (
@@ -14,6 +16,8 @@ function Home() {
       <About />
       <Portfolio />
       <Experience />
+      <Contact />
+      <SocialLinks />
     </div>
   );
 }

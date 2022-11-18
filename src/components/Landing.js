@@ -21,7 +21,7 @@ function Landing() {
       name="home"
       className="hero w-full h-screen  bg-gradient-to-b from-gray-800 to-black text-white p-4"
     >
-      <div className="container">
+      <div className="container p-5">
         <div className="hero-content flex-col lg:flex-row">
           <img
             src={HeroImage}

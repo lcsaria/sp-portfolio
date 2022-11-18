@@ -6,6 +6,8 @@ import react from "../assets/react.svg";
 import spring from "../assets/spring.svg";
 import springboot from "../assets/springboot.svg";
 import java from "../assets/java.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import tailwind from "../assets/tailwindcss.svg";
 
 const Experience = () => {
   const techs = [
@@ -35,21 +37,33 @@ const Experience = () => {
     },
     {
       id: 5,
-      icon: spring,
-      title: "Spring",
-      style: "shadow-green-500 bg-green-300",
+      icon: bootstrap,
+      title: "Bootstrap",
+      style: "shadow-violet-500 bg-violet-300",
     },
     {
       id: 6,
-      icon: springboot,
-      title: "Springboot",
-      style: "shadow-green-500 bg-green-300",
+      icon: tailwind,
+      title: "TailwindCSS",
+      style: "shadow-cyan-500 bg-cyan-300",
     },
     {
       id: 7,
       icon: java,
       title: "Java",
       style: "shadow-gray-500 bg-orange-300",
+    },
+    {
+      id: 8,
+      icon: spring,
+      title: "Spring",
+      style: "shadow-green-500 bg-green-300",
+    },
+    {
+      id: 9,
+      icon: springboot,
+      title: "Springboot",
+      style: "shadow-green-500 bg-green-300",
     },
   ];
 
@@ -66,7 +80,7 @@ const Experience = () => {
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-4 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, icon, title, style }) => (
             <div
               key={id}
