@@ -37,7 +37,7 @@ const SocialLinks = () => {
           Resume <i className="fa-solid fa-file" />
         </>
       ),
-      href: "/resume.pdf",
+      href: "",
       style: "rounded-br-md",
       download: true,
     },

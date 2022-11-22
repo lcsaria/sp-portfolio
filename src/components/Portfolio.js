@@ -1,11 +1,12 @@
 import React from "react";
-import arrayDestruct from "../assets/arrayDestruct.jpg";
+import todoapp from "../assets/todoapp.png";
 
 const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
-      src: arrayDestruct,
+      src: todoapp,
+      title: "Todo App",
     },
   ];
 
@@ -22,21 +23,28 @@ const Portfolio = () => {
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src }) => (
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-10 sm:px-0">
+          {portfolios.map(({ id, src, title }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
+              <div className="mt-3 flex flex-col items-center">{title}</div>
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a
+                  href="https://react-todo-app-nine-zeta.vercel.app/"
+                  className="appearance-none w-1/2 display-none px-6 py-2 m-4 duration-200 hover:scale-105 hover:font-bold hover:font-xl hover:text-secondary"
+                >
                   Demo
-                </button>
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                </a>
+                <a
+                  href="https://github.com/lcsaria/react-todo-app"
+                  className="appearance-none w-1/2 display-none px-6 py-2 m-4 duration-200 hover:scale-105 hover:font-bold hover:font-xl hover:text-secondary"
+                >
                   Code
-                </button>
+                </a>
               </div>
             </div>
           ))}
